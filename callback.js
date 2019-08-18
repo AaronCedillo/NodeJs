@@ -5,10 +5,14 @@ let getUsuarioId = (id, callback) => {
   }
   if(id === 30) {
     callback(`El usuario con id ${ 30 }, no existe`)
-  }
-  callback(usuario);
+  } else
+      callback(null, usuario);
 }
 
-getUsuarioId(30, (usuario) => {
+getUsuarioId(7, (err, usuario) => {
+
+  if(err)
+    return console.log(err);
+
   console.log('Usuario de base de datos', usuario);
 });
