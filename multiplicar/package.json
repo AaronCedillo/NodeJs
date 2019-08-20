@@ -1,0 +1,11 @@
+{
+  "name": "multiplicar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "multiplicar.js",
+  "scripts": {
+    "test": "Ingresando comandos por consola"
+  },
+  "author": "AaronCedillo",
+  "license": "ISC"
+}
