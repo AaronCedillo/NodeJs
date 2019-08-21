@@ -1,11 +1,14 @@
 {
   "name": "multiplicar",
   "version": "1.0.0",
-  "description": "",
+  "description": "esta aplicacion recibe parametros por linea de comando",
   "main": "multiplicar.js",
   "scripts": {
     "test": "Ingresando comandos por consola"
   },
   "author": "AaronCedillo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^14.0.0"
+  }
 }
