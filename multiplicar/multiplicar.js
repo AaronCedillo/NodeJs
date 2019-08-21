@@ -1,6 +1,12 @@
 //Requierds
-
 const fs = require('fs');
+
+let listarTabla = (base, limite = 10) => {
+  for(let i = 0; i < limite; ++i) {
+    let newBase = base * i;
+    console.log(`${base} * ${i} = ${newBase}`);
+  }
+}
 
 let crearArchivo = (base) => {
 
@@ -20,11 +26,12 @@ let crearArchivo = (base) => {
 
     fs.writeFile(`tabla del ${base} .txt`, data, (err) => {
       if(err) reject (err);
-        else resolve(`tabña - ${ base }.txt`);
+        else resolve(`tabla - ${ base }.txt`);
     });
   });
 }
 
 module.exports = {
-  crearArchivo
+  crearArchivo,
+  listarTabla
 }
